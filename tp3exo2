@@ -1,0 +1,57 @@
+def calcul_N():
+    nbr = int(input("Entrez un nombre: "))
+    i = 0
+    total = 0
+    while i != nbr:
+        i += 1
+        total += i
+    print(total)
+#calcul_N()
+
+
+def attente():
+    x = int(input("Entrez une valeur: "))
+    while x < 100:
+        x = int(input("Entrez une valeur: "))
+        print("Vous êtes en attente")
+    print("Vous n'êtes plus en attente")
+#attente()
+
+
+def nombre_val():
+    tab = [10, 12, 14, 18, 7, 6, 1, 4, 11]
+    inf_val = []
+    mid_val = []
+    max_val = []
+    
+    for val in tab:
+        if val < 10:
+            inf_val.append(val)
+        elif 10 <= val and val < 15:
+            mid_val.append(val)
+        else:
+            max_val.append(val)
+            
+    print("Inférieur à 10 :", inf_val)
+    print("Entre 10 et 14 :", mid_val)
+    print("Supérieur ou égal à 15 :", max_val)
+
+#nombre_val()
+
+def grd_nombre():
+    total = int(input("Entrez une valeur: "))
+    i = 0
+    somme = 0
+    while (i + (somme + 1))<= total:
+        somme += 1
+        i += somme
+    print("Le dernier nombre est", somme)
+    print("La plus grosse somme atteinte est", i)
+
+#grd_nombre()
+
+
+
+
+
+

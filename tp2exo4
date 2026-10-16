@@ -1,0 +1,19 @@
+def fondue():
+    base = 4
+    fromage = 800.0
+    eau = 2
+    ail = 2
+    pain = 400
+    nbConvives = int(input("Rentrer le nombres de convives: "))
+
+    nouvelleQuantitefromage = fromage * nbConvives / base
+    nouvelleQuantiteeau = eau * nbConvives / base
+    nouvelleQuantiteail = ail * nbConvives / base
+    nouvelleQuantitepain = pain * nbConvives / base
+
+    print(f"Pour faire une fondue fribourgeoise pour 3 personnes, il vous faut : "
+      f"{nouvelleQuantitefromage} gr de fromage - "
+      f"{nouvelleQuantiteeau} dl d'eau - "
+      f"{nouvelleQuantiteail} gousse(s) d'ail - "
+      f"{nouvelleQuantitepain} gr de pain")
+fondue()

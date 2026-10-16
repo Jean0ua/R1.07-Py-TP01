@@ -1,0 +1,10 @@
+import random
+def piece():
+    nombre = random.randint(0, 100)
+    print(nombre)
+    if nombre <= 50:
+        print("Pile !")
+    else:
+        print("Face !")
+
+piece()

@@ -1,0 +1,16 @@
+def nombre():
+    nombre_uti = int(input("Entrez un nombre entier: "))
+    if nombre_uti>0:
+        if nombre_uti%2 == 0:
+            print("Le nombre est positif et pair")
+        else:
+            print("Le nombre et positif et impair")
+    elif nombre_uti<0:
+        if nombre_uti%2 == 0:
+            print("Le nombre est négatif et pair")
+        else:
+            print("Le nombre et négatif et impair")
+    elif nombre_uti==0:
+        print("Le nombre est zéro")
+
+nombre()

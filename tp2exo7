@@ -1,0 +1,9 @@
+from random import random
+ 
+ 
+def lancer_piece_truquee():
+    if random() < 2 / 3:
+        print("Pile")
+    else:
+        print("Face")
+lancer_piece_truquee()
